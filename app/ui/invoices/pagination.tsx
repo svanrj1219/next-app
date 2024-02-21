@@ -19,6 +19,8 @@ export default function Pagination({ totalPages }: { totalPages: number }) {
     return `${pathname}?${params.toString()}`;
   };
 
+  let position: "first" | "last" | "single" | "middle";
+
   return (
     <>
       {/* NOTE: comment in this code when you get to this point in the course */}
@@ -32,8 +34,6 @@ export default function Pagination({ totalPages }: { totalPages: number }) {
 
         <div className="flex -space-x-px">
           {allPages.map((page, index) => {
-            let position: "first" | "last" | "single" | "middle";
-
             if (index === 0) position = "first";
             if (index === allPages.length - 1) position = "last";
             if (allPages.length === 1) position = "single";
