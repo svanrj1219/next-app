@@ -24,10 +24,11 @@ export default function Page() {
                         , brought to you by Vercel.
                     </p>
                     <Link
+                        target = "_blank"
                         href="https://ewtc8y.aliwork.com/APP_PL41BMYM7JEDOOUTI675/workbench?corpid=ding9b3b934d979d48f235c2f4657eb6378f"
                         className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
                     >
-                        <span>跳转</span> <ArrowRightIcon className="w-5 md:w-6"/>
+                        <span>Login</span> <ArrowRightIcon className="w-5 md:w-6"/>
                     </Link>
                 </div>
                 <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
